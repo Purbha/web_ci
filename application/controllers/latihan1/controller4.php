@@ -6,7 +6,7 @@ class Controller4 extends CI_Controller {
 	}
 
 	public function home() {
-		$data['paragraf'] = 'Pelatihan CodeIgniter';
+		$data['paragraf'] = 'Ini adalah Pelatihan CodeIgniter';
 		$this->load->view('latihan1/view2',$data);		
 	}
 	
