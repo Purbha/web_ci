@@ -2,11 +2,11 @@
 class Controller2 extends CI_Controller {
 
 	public function index() {
-		echo 'Ini adalah class index().';
+		echo 'Ini adalah function index().';
 	}
 
 	public function home() {
-		echo 'Ini adalah class home().';
+		echo 'Ini adalah function home().';
 	}
 	
 }
