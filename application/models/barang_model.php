@@ -5,7 +5,7 @@ class Barang_model extends CI_Model {
 		$query = $this->db->get('barang');
 		return $query->result();
 	}
-	
+
 	public function insert_barang() {
 		date_default_timezone_set('Asia/Jakarta');
 		$data = array (
@@ -22,7 +22,7 @@ class Barang_model extends CI_Model {
 		$hasil = $this->db->affected_rows(); 
 		return ($hasil != 1) ? "Insert Gagal" : "Insert Berhasil";
 	}
-
+	
 	public function select_barang($kdbar) {
 		$this->db->from('barang');
 		$this->db->where('kdbar',$kdbar);
