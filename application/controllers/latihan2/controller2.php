@@ -9,6 +9,12 @@ class Controller2 extends CI_Controller {
 	}
 	
 	public function insert_barang()	{
+		if(!$this->input->post('kdbar')) {
+			echo "<h1>TIDAK BISA TEMBAK LANGSUNG</h1>";
+			echo site_url().br();
+			echo base_url().br();			
+			return;
+		}
 		$data['title'] = 'Master Barang';
 		$data['heading'] = 'Input Barang';
 		$data['pesan'] = $this->barang_model->insert_barang();
